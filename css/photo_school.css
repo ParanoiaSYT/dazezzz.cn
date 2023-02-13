@@ -1,0 +1,61 @@
+.container_school img {
+  display: block;
+  max-width: 100%;
+}
+
+.container_school {
+  margin: 30px auto;
+  height: 80vh;
+  overflow: hidden;
+  width: 80%;
+}
+.container_school p,.container_school h3 {
+  color: #5D5D5D;
+  text-decoration: none;
+}
+
+.container_school ul {
+  margin: 0;
+  font-size: 0;
+  padding: 0;
+}
+.container_school li {
+  color: #D2D2D2;
+  display: inline-block;
+  font: 10px/1.5 Trebuchet MS, Verdana, sans-serif;
+  list-style: none;
+  margin: 2% 2% 30px 0;
+  vertical-align: top;
+  /*width: 18%;*/
+  width: 22.5%;
+  /* (100% - (5*2%)) / 5 = 18% */
+  /* (100% - (5*2%)) / 4 = 22.5% */
+}
+
+@media only screen and (min-width: 721px) and (max-width: 940px) {
+  .container_school li {
+    /*width: 23%;*/
+    width: 30.666%;
+    /* (100% - (4*2%)) / 4 = 23% */
+    /* (100% - (4*2%)) / 3 = 30.666% */
+  }
+}
+@media only screen and (min-width: 531px) and (max-width: 720px) {
+  .container_school li {
+    width: 47%;
+    /* (100% - (3*2%)) / 3 = 31.333% */
+    /* (100% - (3*2%)) / 2 = 47% */
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 530px) {
+  .container_school li {
+    width: 48%;
+    /* (100% - (2*2%)) / 2 = 48% */
+  }
+}
+@media only screen and (max-width: 320px) {
+  .container_school li {
+    width: 96%;
+    /* 100% - (1*4%)= 96% */
+  }
+}

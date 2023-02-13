@@ -1,0 +1,131 @@
+:root {
+  --bg: #1a1e2d;
+  --green: #a5ea9b;
+  --pink: #ff61d8;
+  --blue: #569cfa;
+  --orange: #ffcc81;
+  --cyan: #7ed1e2;
+}
+
+body {
+  /*height: 100vh;*/
+  /*width: 50vw;*/
+  background: var(--bg);
+  /*display: flex;*/
+  place-content: center;
+  /*align-items: flex-end;*/
+  /*overflow: hidden;*/
+}
+
+@media (min-width: 1600px) {
+  .cat {
+    width: 60vw;
+    height: 80vh;
+    margin:auto;
+  }
+}
+
+@media (min-width: 1080px) and (max-width: 1600px){
+  .cat {
+    width: 70vw;
+    height: 80vh;
+    margin:auto;
+  }
+}
+
+@media (max-width: 1080px) {
+  .cat {
+    width: 90vw;
+    height: 80vh;
+    margin:auto;
+  }
+}
+
+
+
+.cat svg {
+  height: 100%;
+  width: 100%;
+  overflow: visible;
+}
+
+#bongo-cat {
+  fill: var(--bg);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 4;
+}
+#bongo-cat .laptop-cover,
+#bongo-cat .headphone .band {
+  fill: none;
+}
+#bongo-cat .paw, #bongo-cat .head {
+  stroke: var(--orange);
+}
+#bongo-cat .laptop-keyboard {
+  stroke-width: 2;
+}
+#bongo-cat .terminal-code {
+  stroke-width: 5;
+}
+#bongo-cat .music .note,
+#bongo-cat .laptop-base,
+#bongo-cat .laptop-cover,
+#bongo-cat .paw .pads {
+  stroke: var(--pink);
+}
+#bongo-cat .table line,
+#bongo-cat .headphone .band,
+#bongo-cat .headphone .speaker path:nth-child(3) {
+  stroke: var(--green);
+}
+#bongo-cat .terminal-frame,
+#bongo-cat .laptop-keyboard,
+#bongo-cat .headphone .speaker path:nth-child(2) {
+  stroke: var(--blue);
+}
+#bongo-cat .terminal-code,
+#bongo-cat .headphone .speaker path:first-child {
+  stroke: var(--cyan);
+}
+
+
+
+g.paw-left g.up,
+g.paw-right path.down,
+g.paw-left path.down,
+g.paw-right g.up
+{
+  -webkit-animation: blink 300ms infinite;
+  animation: blink 300ms infinite;
+}
+
+g.paw-right path.down,
+g.paw-left g.up{
+  -webkit-animation-delay: 150ms;
+  animation-delay: 150ms;
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  49% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  49% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}

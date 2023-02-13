@@ -1,0 +1,100 @@
+.shubox{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.shu {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background-color: rgba(255, 236, 179, 0.7);
+    transform-style: preserve-3d;
+    box-shadow: 300px 0px 30px rgba(0, 0, 0, .6) inset;
+    transition: 2s cubic-bezier(.79, .34, .47, .92) 0.3s;
+}
+
+.shu::after {
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 303px;
+    left: 0px;
+    bottom: -3px;
+    /*  background-color: rgb(100, 96, 96); */
+    background-image: linear-gradient(to right, rgb(71, 68, 68), rgba(124, 120, 120, 0.3));
+    border-bottom-left-radius: 5px;
+}
+
+.shu::before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    height: 100%;
+    right: -3px;
+    top: 0px;
+    background-color: rgb(112, 108, 108);
+    background-image: linear-gradient(to top, rgb(114, 111, 111), rgba(90, 87, 87, 0.5));;
+    border-top-right-radius: 3px;
+}
+
+.shu:hover {
+    box-shadow: 30px 0px 30px rgba(0, 0, 0, .6) inset;
+    transform: rotate(-5deg);
+}
+
+
+.feng {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-image: url(../icey_pics/icey1.JPG);
+    background-size: 100%;
+    transform-origin: left;
+    transition: 2s cubic-bezier(.79, .34, .47, .92) 0.3s;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
+
+
+}
+
+.shu:hover .feng {
+    transform: rotateY(-140deg);
+}
+
+
+
+.wen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    font-family: 'fangsong';
+    text-align: left;
+}
+
+
+.wen h2{
+    color: black;
+    padding-top: 60px;
+    padding-left: 40px;
+}
+.wen p{
+    color: black;
+    padding-top: 30px;
+    padding-bottom: 55px;
+    padding-left: 40px;
+    padding-right: 15px;
+    line-height: 1.5;
+}
+#wen_a{
+    text-decoration: none;
+    color: mintcream;
+    text-shadow: -2px 2px slategray;
+    margin-top: 80px;
+    margin-left: 50px;
+    line-height: 1.5;
+}

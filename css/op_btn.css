@@ -1,0 +1,94 @@
+input{
+    display: none;
+}
+
+.flex_content0,
+.flex_content1,
+.flex_content2,
+.flex_content3{
+    display: none;
+}
+
+.Bcontent:checked ~ .flex_content_box .flex_content div.flex_content1{
+    display: block;
+}
+.Bcontent:checked ~ .flex_content_box .flex_content div.flex_content0{
+    display: none;
+}
+
+.Bcontent:checked ~ ul li#BBB .btn{
+    box-shadow: inset 0.2rem 0.2rem 0.5rem rgba(195, 193, 198, 0.9), inset -0.2rem -0.2rem 0.5rem #fff;
+}
+
+
+.Ccontent:checked ~ .flex_content_box .flex_content div.flex_content2{
+    display: block;
+}
+.Ccontent:checked ~ .flex_content_box .flex_content div.flex_content0{
+    display: none;
+}
+
+.Ccontent:checked ~ ul li#CCC .btn{
+    box-shadow: inset 0.2rem 0.2rem 0.5rem rgba(195, 193, 198, 0.9), inset -0.2rem -0.2rem 0.5rem #fff;
+}
+
+.Dcontent:checked ~ .flex_content_box .flex_content div.flex_content3{
+    display: block;
+}
+.Dcontent:checked ~ .flex_content_box .flex_content div.flex_content0{
+    display: none;
+}
+.Dcontent:checked ~ ul li#DDD .btn{
+    box-shadow: inset 0.2rem 0.2rem 0.5rem rgba(195, 193, 198, 0.9), inset -0.2rem -0.2rem 0.5rem #fff;
+}
+
+
+.flex_content0{
+    display: block;
+}
+
+
+
+
+
+/*button.btn{*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*    display: block;*/
+/*}*/
+a.btn {
+    position: relative;
+    /*color: #9baacf;*/
+    font-size: 3.5vmin;
+    /*background-color: black;*/
+    text-transform: uppercase;
+    padding: 1vmin 5vmin;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.4s ease;
+    /*-webkit-text-fill-color: transparent;*/
+    -webkit-background-clip: text;
+    z-index: 999;
+    box-shadow: inset 0.2rem 0.2rem 0.5rem #fff, inset -0.2rem -0.2rem 0.5rem rgba(195, 193, 198, 0.9), 0.3rem 0.3rem 0.5rem rgba(195, 193, 198, 0.9), -0.2rem -0.2rem 0.4rem #fff;
+}
+
+
+.btn:hover {
+    box-shadow: inset -1px -1px 8px white, inset -1px -1px 12px rgba(255, 255, 255, 0.5), inset 1px 1px 4px rgba(255, 255, 255, 0.1), inset 1px 1px 8px rgba(0, 0, 0, 0.15);
+}
+
+.btn:hover span {
+    transform: scale(0.98);
+}
+
+.btn + .btn {
+    margin-left: 5%;
+}
+
+.btn:only-child {
+    margin: 0;
+}
+
+
+
+

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=0.6, maximum-scale=1, minimum-scale=0.6, user-scalable=0">
+    <meta name="description" content="For Icey">
+    <title>ICEYICEY</title>
+    <link rel="shortcut icon" type="image/x-icon" href="icey_files/icey_pics/favicon.ico"/>
+
+    <link rel="stylesheet" href="icey_files/icey_css/icey_layout.css">
+    <link rel="stylesheet" href="icey_files/icey_css/book.css">
+    <link rel="stylesheet" href="icey_files/icey_css/button.css">
+    <link rel="stylesheet" href="icey_files/icey_css/paper.css">
+    <link rel="stylesheet" href="icey_files/icey_css/photowall.css">
+
+
+    <script src="icey_files/icey_js/star1.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="icey_files/icey_js/star2.js">
+    <link rel="stylesheet" href="icey_files/icey_css/star.css">
+    <script src="icey_files/icey_js/star3.js"></script>
+
+
+<!--    snow js-->
+    <script src="js/love_jquery.js"></script>
+    <script src="js/love_bg.js"></script>
+
+        <script type="text/javascript">
+            while (true) {
+                var password = "";
+                password = prompt('请输入密码 (本网站需输入密码才可进入):', '');
+                if (password != '0731') {
+                    alert("密码不正确,无法进入本站!!");
+                } else {
+                    break;
+                }
+            }
+        </script>
+
+
+    <style>
+    </style>
+</head>
+
+<body>
+<audio id="music" src="mp3/打上花火.mp3" loop></audio>
+<section class="et-hero-tabs">
+    <!--background_stars-->
+    <link href='icey_files/icey_css/star_font.css' rel='stylesheet' type='text/css'>
+    <div id='stars'></div>
+    <div id='stars2'></div>
+    <div id='stars3'></div>
+
+    <button class="button" id="btn">FOR&nbsp;&nbsp;ICEY</button>
+    <audio src="mp3/cmj.mp3" id="myaudio" controls="controls" loop hidden>
+    </audio>
+
+
+    <div class="shubox" id="shubox" hidden>
+        <div class="shu">
+            <div class="feng"></div>
+            <div class="wen">
+                <h2>For ICEY</h2>
+                <p>
+                    在趋于无限的混沌星河之中，有一本关于小冰的书，在须臾的时间里不完全地记载了一些永恒的瞬间。并非所有人都可以打开，被封印的魔法书只有在专属之人面前才可开启。
+                    <br>
+                    所幸，等到了你。
+                </p>
+                <a id="wen_a" href="#tab-es6">
+                    NEXT PAGE
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!--这一段js用来实现按下按钮出现book-->
+    <script type="text/javascript">
+        var btn = document.getElementById('btn');
+        var audio = document.getElementById('myaudio');
+        var shubox = document.getElementById('shubox')
+        btn.onclick = function () {
+            audio.play();
+            btn.remove();
+            shubox.style.display = "flex";
+        }
+    </script>
+
+</section>
+
+<!-- Main -->
+<main class="et-main" id="abouticey">
+
+    <section class="et-slide" id="tab-es6" hidden>
+
+        <canvas id="cv_paper"></canvas>
+        <div id="paper">
+            <div id="pattern">
+                <div id="diary_content" style="text-align: left">
+                    <p style="text-align: center;font-size: larger">我眼中的小冰 ❄</p>
+                    <br/><br/>
+                    小冰是谁: "小冰🧊，就是小冰冰冰🧊🧊🧊，AKA Microice。",
+                    <br/><br/>
+                    超能力: "睡神，可以一睡12h+💤（羡慕不来）；感知镜头能力max",
+                    <br/><br/>
+                    喜欢的动物: "狗子🐶，最爱萨摩耶。有养螺，还即将养蜥蜴🦎呢。",
+                    <br/><br/>
+                    喜欢的电影: "《Like Sunday, Like Rain》(如晴天，似雨天)"，
+                    <br/><br/>
+                    天气: "当然是讨厌下雨天🌧啦，喜欢晴天☀（'雨停！'）",
+                    <br/><br/>
+                    音乐: "和我一样喜欢听歌🎧，我说她有绝对音感她不信~.~  有一把木质guitar🎸，还要让我的Ukulele当小弟",
+                    <br/><br/>
+                    喜欢什么颜色呢: "包容度很大，喜欢红色、蓝色、橘色等等等等（神奇在于彩虹七色🌈中，选两个就是橘色和蓝色，选一个变成了红色wow）",
+                    <br/><br/>
+                    食物禁忌："猕猴桃🥝and🍎苹果（emmm, 想起知道前我还在平安夜送过两个...），咖啡因过敏（中午以后不能喝奶茶、咖啡☕，茶也不行）",
+                    <br/><br/>
+                    小弱项: "有一点点搞不清东南西北的方向🧭，记性和我差不多啦hhh",
+                    <br/><br/>
+                    害怕什么: "镜头恐惧📷（和我一样）",
+                    <br/><br/>
+                    喜欢做的事:
+                    <br>
+                    吃吃吃: "吃的方面基本不挑的，每次都是我决定吃啥～";
+                    <br>
+                    看电影: "喜欢一个人在周末的自由时光里安静地看电影，会在豆瓣记录";
+                    <br>
+                    刷豆瓣: "小冰🧊的快乐源泉，找回科研自信的地方。",
+                    <br/>
+                    养细胞、跑电泳: "哟，WB跑得不错哦。"
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container_school">
+        </div>
+        <a id="page2_btn" href="#tab-flexbox">神奇的事情发生了！</a>
+    </section>
+
+    <script type="text/javascript">
+        var page1_a = document.getElementById('wen_a');
+        var tab_es6 = document.getElementById('tab-es6')
+        page1_a.onclick = function () {
+            page1_a.remove()
+            tab_es6.style.display = "flex";
+        }
+    </script>
+    <script type="text/javascript">
+        reSetSize();
+        window.onresize = reSetSize;
+
+        function reSetSize() {
+            var windowsHeight = window.innerHeight;
+            var windowsWidth = window.innerWidth;
+            document.getElementById("framecontent_1").style.height = (windowsHeight) + "px";
+            document.getElementById("framecontent_1").style.width = (windowsWidth) + "px";
+        }
+    </script>
+
+
+    <section class="et-slide" id="tab-flexbox" hidden>
+        <div class="photowall_container">
+            <div class="img-group img-group00">
+                <!--                <img id="img00" src="icey_files/icey_pics/0.jpg" width="384" height="400"/>-->
+                <img id="img00" src="https://pic.imgdb.cn/item/62087d382ab3f51d914907f0.jpg" width="384" height="400"/>
+                <div class="img-tip img-tip00">别想拍到我hhh</div>
+            </div>
+
+            <div class="img-group img-group01">
+                <!--                <img id="img01" src="icey_files/icey_pics/1.jpg" width="546" height="370"/>-->
+                <img id="img01" src="https://pic.imgdb.cn/item/62087d662ab3f51d914931f6.jpg" width="546" height="370"/>
+                <div class="img-tip img-tip01">2021跨年夜倒计时于新街口祝小冰科研顺利</div>
+            </div>
+
+            <div class="img-group img-group02">
+                <!--                <img id="img02" src="icey_files/icey_pics/2.JPG" width="204" height="256">-->
+                <img id="img02" src="https://pic.imgdb.cn/item/62087d792ab3f51d914944f6.jpg" width="204" height="256">
+                <div class="img-tip img-tip02">被戏弄的"测距仪"</div>
+            </div>
+
+            <div class="img-group img-group03">
+                <!--                <img id="img03" src="icey_files/icey_pics/3.jpg" width="384" height="266"/>-->
+                <img id="img03" src="https://pic.imgdb.cn/item/62087d972ab3f51d91495e6e.jpg" width="384" height="266"/>
+                <div class="img-tip img-tip03">卧龙凤雏的画技</div>
+            </div>
+            <div class="img-group img-group04">
+                <!--                <img id="img04" src="icey_files/icey_pics/4.jpg" width="486" height="324"/>-->
+                <img id="img04" src="https://pic.imgdb.cn/item/62087da92ab3f51d91496cad.jpg" width="486" height="324"/>
+                <div class="img-tip img-tip04">专心绘画</div>
+            </div>
+            <div class="img-group img-group05">
+                <!--                <img id="img05" src="icey_files/icey_pics/5.jpeg" width="234" height="266"/>-->
+                <img id="img05" src="https://pic.imgdb.cn/item/62087dbb2ab3f51d91497dd8.jpg" width="234" height="266"/>
+                <div class="img-tip img-tip05">咔</div>
+            </div>
+            <div class="img-group img-group06">
+                <!--                <img id="img06" src="icey_files/icey_pics/6.jpeg" width="424" height="486"/>-->
+                <img id="img06" src="https://pic.imgdb.cn/item/62087ddf2ab3f51d91499e27.jpg" width="424" height="486"/>
+                <div class="img-tip img-tip06">妹妹一箭射中我心</div>
+            </div>
+            <div class="img-group img-group07">
+                <!--                <img id="img07" src="icey_files/icey_pics/7.jpg" width="476" height="384"/>-->
+                <img id="img07" src="https://pic.imgdb.cn/item/62087df02ab3f51d9149ac4d.jpg" width="476" height="384"/>
+                <div class="img-tip img-tip07">偷偷拍下古装小冰</div>
+            </div>
+            <div class="img-group img-group08">
+                <!--                <img id="img08" src="icey_files/icey_pics/8.jpg" width="522" height="378"/>-->
+                <img id="img08" src="https://pic.imgdb.cn/item/62087e092ab3f51d9149c295.jpg" width="522" height="378"/>
+                <div class="img-tip img-tip08">小冰眼神威胁（怎么还有人专注玩游戏时还能察觉到我偷拍啊？</div>
+            </div>
+            <div class="img-group img-group09">
+                <!--                <img id="img09" src="icey_files/icey_pics/9.jpg" width="384" height="416"/>-->
+                <img id="img09" src="https://pic.imgdb.cn/item/62087e1a2ab3f51d9149cea9.jpg" width="384" height="416"/>
+                <div class="img-tip img-tip09">神奇的对话</div>
+            </div>
+            <div class="img-group img-group10">
+                <!--                <img id="img10" src="icey_files/icey_pics/10.JPG" width="506" height="334"/>-->
+                <img id="img10" src="https://pic.imgdb.cn/item/62087e2d2ab3f51d9149de1f.jpg" width="506" height="334"/>
+                <div class="img-tip img-tip10">雇佣兵小冰所提供的鼓楼校园猫猫</div>
+            </div>
+            <div class="img-group img-group11">
+                <!--                <img id="img11" src="icey_files/icey_pics/11.JPG" width="426" height="324"/>-->
+                <img id="img11" src="https://pic.imgdb.cn/item/62087e3e2ab3f51d9149ee00.jpg" width="426" height="324"/>
+                <div class="img-tip img-tip11">第一次看电影，竟然听到了分享给我过的《吞吐》</div>
+            </div>
+            <div class="img-group img-group12">
+                <!--                <img id="img12" src="icey_files/icey_pics/12dongan.JPG" width="324" height="416"/>-->
+                <img id="img12" src="https://pic.imgdb.cn/item/62087e4e2ab3f51d9149fe0a.jpg" width="324" height="416"/>
+                <div class="img-tip img-tip12">未送出的冬安</div>
+            </div>
+            <div class="img-group img-group13">
+                <!--                <img id="img13" src="icey_files/icey_pics/13time.jpg" width="405" height="500"/>-->
+                <img id="img13" src="https://pic.imgdb.cn/item/62087e5d2ab3f51d914a0b48.jpg" width="405" height="500"/>
+                <div class="img-tip img-tip13">一起被偷走的时间</div>
+            </div>
+        </div>
+
+        <a id="page3_btn" href="envelope.html" target="_blank">神奇的事情罗列不下了～</a>
+
+    </section>
+    <script type="text/javascript">
+        var page2_btn = document.getElementById('page2_btn');
+        var tab_flexbox = document.getElementById('tab-flexbox');
+        page2_btn.onclick = function () {
+            tab_flexbox.style.display = "flex";
+            page2_btn.remove()
+
+        }
+    </script>
+
+</main>
+
+
+<!-- stars -->
+<script src='icey_files/icey_js/icey_jq.js'></script>
+<script src="icey_files/icey_js/star1.js"></script>
+
+</body>
+</html>

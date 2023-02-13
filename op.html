@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>OP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="none">
+    <meta name="author" content="SYT">
+    <meta name="description" content="Opening of Web of SYT">
+    <link rel="stylesheet" href="css/time.css">
+    <link rel="stylesheet" href="css/loading.css">
+    <link rel="stylesheet" href="css/op_btn.css">
+
+
+    <style>
+        body {
+            margin: 0;
+            display: grid;
+        }
+
+        div.videocontainer {
+
+        }
+
+        .item0 {
+            z-index: 999;
+        }
+
+        .item1 {
+            grid-area: 4/1/5/3;
+            text-align: center;
+            height: 100%;
+        }
+
+        .item3 {
+            grid-area: 2/1/4/7;
+            /*background-color: lightblue;*/
+            background: linear-gradient(240deg, rgba(120, 50, 50, 0.3), rgba(50, 50, 200, 0));
+
+            height: 100%;
+            width: 100%;
+        }
+
+        .small_item3 {
+            display: grid;
+            grid-template-columns:1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            place-items: center;
+            width: 100%;
+            height: 100%;
+        }
+
+        .small_item3 ul {
+            grid-area: 1/1/4/2;
+            place-content: center;
+            border-right: rgba(180, 180, 200, 0.2) 4px solid;
+            list-style: none;
+            margin: auto;
+            padding: 0;
+        }
+        .small_item3 ul li{
+            margin: 4vmin 6vmin;
+        }
+
+        .small_item3 div.flex_content_box{
+            grid-area: 1/2/4/5;
+            box-sizing: border-box;
+            height: 100%;
+            width: 100%;
+            border-radius: 6vmin;
+            box-shadow: -0.3rem -0.3rem 0.5rem rgba(195, 193, 198, 0.9), 0.2rem 0.2rem 0.4rem #fff;
+
+        }
+
+        .small_item3 div.flex_content_box div.flex_content {
+            height: 100%;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3vmin;
+        }
+
+        .flex_content_all{
+            padding-left: 1vmin;
+            padding-right: 1vmin;
+        }
+
+        div.flex_content0{
+            font-size: 5vmin;
+        }
+
+        a.link{
+            text-decoration: none;
+            color: #4b4d5c;
+        }
+
+        img{
+            width: 100%;
+            margin: auto;
+            padding: 0;
+            min-width: 80px;
+        }
+
+        .item4 {
+            grid-area: 2/3/3/6;
+            /*background-color: black;*/
+            height: 100%;
+            width: 100%;
+        }
+
+        .item_99 {
+            grid-area: 4/2/5/6;
+            z-index: -1;
+        }
+
+        div.gridcontainer {
+            display: grid;
+            grid-template-columns:1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: auto 40vh 20vh 30vh auto;
+            place-items: center;
+        }
+
+    </style>
+
+
+</head>
+<body>
+<div class="gridcontainer">
+
+    <div class="item3">
+        <div class="small_item3">
+            <input type="radio" name="tab" id="AA" class="Acontent">
+            <input type="radio" name="tab" id="BB" class="Bcontent">
+            <input type="radio" name="tab" id="CC" class="Ccontent">
+            <input type="radio" name="tab" id="DD" class="Dcontent">
+
+            <ul class="flexbtn">
+                <li id="AAA">
+                    <label for="AA">
+                        <a>
+                            <img src="pics/purple.jpeg" alt="Dazezzz">
+                        </a>
+                    </label>
+                </li>
+                <li id="BBB">
+                    <label for="BB">
+                        <a class='btn'>
+                            <span>理性</span>
+                        </a>
+                    </label>
+                </li>
+                <li id="CCC">
+                    <label for="CC">
+                        <a class='btn'>
+                            <span>感性</span>
+                        </a>
+                    </label>
+                </li>
+                <li id="DDD">
+                    <label for="DD">
+                        <a class='btn'>
+                            <span>爱好</span>
+                        </a>
+                    </label>
+                </li>
+            </ul>
+
+            <div class="flex_content_box">
+                <div class="flex_content">
+                    <div class="flex_content0 flex_content_all">
+                        <div>
+                            <p>来这儿发会呆嘛？</p>
+                            <p>
+                                Daze zzz
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="flex_content1 flex_content_all">
+                        <div>
+                            <p>一个纯正理科生</p>
+                            <p>
+                                之所以这么说是因为从小就更喜欢理科一些，高中是物化班，大学是应用物理，硕士凝聚态物理，博士物理学。
+                            </p>
+                            <p>凭借一点小聪明一窥门径，也没多大的科研梦想。</p>
+                        </div>
+                    </div>
+                    <div class="flex_content2 flex_content_all">
+                        <div>
+                            <p>一个时常感性的人</p>
+                            <p>不喜欢做规划，对未知的世界有着向往。</p>
+                            <p>做大多数事情的内驱为兴趣，有趣即正义～</p>
+                            <p>滴答滴答，流逝的时间让我产生既视感，所感受到的时间比其他人要慢许多。</p>
+                        </div>
+                    </div>
+                    <div class="flex_content3 flex_content_all">
+                        <div>
+                            <p>浅尝辄止，不求甚解。爱好有很多，但是有一点三分钟热度。略有小成时兴趣就会骤减。</p>
+                            <p>游戏：玩过的很多，类型全覆盖，不会随大众。</p>
+                            <p>音乐：爱听歌，一个人的时候戴上耳机彷佛自由就没有边界。偶尔弹Ukulele。</p>
+                            <p>运动：羽毛球、台球、乒乓球、滑板...</p>
+                            <p>
+                                自学一点代码玩，部分于 <a class="link" href="https://github.com/ParanoiaSYT">Github</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="time_clock item_99">
+        <div class="clock">
+            <div class="hr">
+                <div class="strip">
+                    <div class="number">0</div>
+                    <div class="number">1</div>
+                    <div class="number">2</div>
+                </div>
+                <div class="strip">
+                    <div class="number">0</div>
+                    <div class="number">1</div>
+                    <div class="number">2</div>
+                    <div class="number">3</div>
+                    <div class="number">4</div>
+                    <div class="number">5</div>
+                    <div class="number">6</div>
+                    <div class="number">7</div>
+                    <div class="number">8</div>
+                    <div class="number">9</div>
+                </div>
+            </div>
+            <div class="min">
+                <div class="strip">
+                    <div class="number">0</div>
+                    <div class="number">1</div>
+                    <div class="number">2</div>
+                    <div class="number">3</div>
+                    <div class="number">4</div>
+                    <div class="number">5</div>
+                </div>
+                <div class="strip">
+                    <div class="number">0</div>
+                    <div class="number">1</div>
+                    <div class="number">2</div>
+                    <div class="number">3</div>
+                    <div class="number">4</div>
+                    <div class="number">5</div>
+                    <div class="number">6</div>
+                    <div class="number">7</div>
+                    <div class="number">8</div>
+                    <div class="number">9</div>
+                </div>
+            </div>
+            <div class="sec">
+                <div class="strip">
+                    <div class="number">0</div>
+                    <div class="number">1</div>
+                    <div class="number">2</div>
+                    <div class="number">3</div>
+                    <div class="number">4</div>
+                    <div class="number">5</div>
+                </div>
+                <div class="strip">
+                    <div class="number">0</div>
+                    <div class="number">1</div>
+                    <div class="number">2</div>
+                    <div class="number">3</div>
+                    <div class="number">4</div>
+                    <div class="number">5</div>
+                    <div class="number">6</div>
+                    <div class="number">7</div>
+                    <div class="number">8</div>
+                    <div class="number">9</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<div class="bt"></div>
+<!--        <a href="" target=_blank>*ICP备********号</a>-->
+
+
+<script>
+    var video = document.getElementById('v1');
+    video.playbackRate = 0.5;
+</script>
+
+<!-- clock -->
+<script src="js/time.js"></script>
+
+<!-- Loading-->
+<div class="loading item0">
+    <h1 class="loading-title">loading</h1>
+    <div class="loading-progress"></div>
+</div>
+
+</body>
+<!-- partial -->
+<script src='js/loading2.js'></script>
+<script src="js/loading1.js"></script>
+
+</html>

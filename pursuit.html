@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CodePen - Particle Canvas using CreateJS</title>
+    <link rel="shortcut icon" type="image/x-icon" href="icey_files/icey_pics/favicon.ico"/>
+
+    <!--    bb and bbcanvas-->
+    <link rel="stylesheet" href="icey_files/icey_css/bb.css">
+    <link rel="stylesheet" href="icey_files/icey_css/bb_button.css">
+
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            border: 0;
+        }
+
+        div#bb_container {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 0;
+            width: 100%;
+            height: 100vh;
+            opacity: 0.8;
+            filter: alpha(opacity=80);
+        }
+
+        #d1 {
+            float: left;
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            background-color: rgb(241, 235, 235);
+        }
+
+        #p1 {
+            width: 100%;
+            display: table;
+            margin-top: 10%;
+            text-align: center;
+            font-size: 2em;
+        }
+
+        button.bb {
+            width: 100px;
+            height: 40px;
+            font-size: 100%;
+            /* border-radius: 2%; */
+        }
+
+        #b1 {
+            position: absolute;
+            left: 30%;
+            top: 35%;
+        }
+
+        #b2 {
+            position: absolute;
+            left: 60%;
+            top: 35%;
+        }
+    </style>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="bb_container">
+    <div id="d1">
+        <div id="text_box">
+            <p id="p1">
+                所以，小冰愿意做我的女朋友吗？
+            </p>
+        </div>
+        <div class="bb" id="b1">
+    <span class="button--bubble__container">
+  <button href="#campaign" class="bb_button button--bubble" id="button1">
+    愿意>_<
+  </button>
+  <span class="button--bubble__effect-container">
+    <span class="circle top-left"></span>
+    <span class="circle top-left"></span>
+    <span class="circle top-left"></span>
+
+    <span class="bb_button effect-button"></span>
+
+    <span class="circle bottom-right"></span>
+    <span class="circle bottom-right"></span>
+    <span class="circle bottom-right"></span>
+  </span>
+</span>
+        </div>
+
+        <!--        <button class="bb" id="b1">愿意</button>-->
+        <button class="bb" id="b2">不愿意</button>
+    </div>
+    <script>
+        var x1 = document.getElementById("d1").clientWidth;
+        var y1 = document.getElementById("d1").clientHeight;
+        // var x = document.getElementById("d1").scrollWidth;
+        // var y = document.getElementById("d1").scrollHeight;
+        var buttons = document.getElementsByTagName("button");
+        for (var i = 0; i < buttons.length; i++) {
+            buttons[i].onmouseover = handleMouseover;
+            buttons[i].onclick = handleClick;
+        }
+
+        function handleClick(e) {
+            if (e.target.id == "button1") {
+                alert("不能后悔啦！余生多指教啦～");
+            } else if (e.target.id == "b2") {
+                alert("天呐，这个女人还想着点到我！");
+            }
+        }
+
+        function handleMouseover(e) {
+            if (e.target.id == "button1") {
+                e.target.title = "别犹豫啦！";
+            } else if (e.target.id == "b2") {
+                var doc = document.getElementById("b2");
+
+                e.target.style.left = Math.random() * (x1 - doc.offsetWidth) + "px";
+                e.target.style.top = Math.random() * (y1 - doc.offsetHeight) + "px";
+
+            }
+        }
+    </script>
+</div>
+<canvas id="myCanvas"></canvas>
+
+<!-- bbcanvas -->
+<script src="icey_files/icey_js/bbcanvas_create.js"></script>
+<script src='icey_files/icey_js/bbcanvas.js'></script>
+
+<!-- bb_button -->
+<script src='icey_files/icey_js/bb_button_1.js'></script>
+<script src='icey_files/icey_js/bb_button_2.js'></script>
+<script src='icey_files/icey_js/bb_button_3.js'></script>
+<script src='icey_files/icey_js/icey_jq.js'></script>
+<script src='icey_files/icey_js/bb_button_4.js'></script>
+<script src="icey_files/icey_js/bb_button.js"></script>
+</body>
+</html>

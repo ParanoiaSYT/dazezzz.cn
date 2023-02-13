@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>OP</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="none">
+    <meta name="author" content="SYT">
+    <meta name="description" content="Opening of Web of SYT">
+
+    <style>
+        body {
+            margin: 0;
+            height: 100%;
+            background-color: black;
+        }
+
+        div.videocontainer {
+
+        }
+
+        .item1 {
+            grid-area: 1/1/2/2;
+            background-color: black;
+            z-index: 1;
+            text-align: center;
+        }
+
+        .item3 {
+            grid-area: 2/1/3/2;
+            background-color: black;
+            margin-top: 100px;
+        }
+
+        div.gridcontainer {
+            display: grid;
+            grid-template-columns:1fr;
+            grid-template-rows: 1fr auto;
+            /* grid-gap: 10px; */
+        }
+
+        div.bt {
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+            height: 200%;
+            background-color: black;
+            z-index: -1;
+        }
+
+    </style>
+
+
+</head>
+<body>
+<div class="gridcontainer">
+    <div class="videocontainer item0">
+        <video controls poster="pics/op.jpg" webkit-playsinline playsinline webview.allowsInlineMeddiaPlayback="Yes" width="100%"
+               height="100%">
+            <!--            <source src="https://teachingoss.applysquare.com/2021/12/03/16/23/51/5807/o_1flvm95v7dvhdef1bnp3631bv07.mov?OSSAccessKeyId=LTAI5tRvp4vmhaFUwAAcBybz&Expires=1638530698&Signature=AGqLgBWbo9TFhnXKNhbwsQWWL8s%3D">-->
+            <source src="video/op.mov">
+        </video>
+    </div>
+
+    <div class="item1 bottomnav" align="center">
+<!--        <audio controls loop autoplay>-->
+<!--            &lt;!&ndash;            <source src="https://teachingoss.applysquare.com/2021/11/29/20/08/16/3258/o_1fllph83a12mc12v0c0clnh2h2h.m4a?OSSAccessKeyId=LTAI5tRvp4vmhaFUwAAcBybz&Expires=1638198572&Signature=a00cS5Y0XO%2BKw6RFdolouYs8rvw%3D">&ndash;&gt;-->
+<!--            <source src="https://teachingoss.applysquare.com/2021/11/29/20/08/24/5802/o_1fllpip6d1j20e2j12951lvhur2r.m4a?OSSAccessKeyId=LTAI5tRvp4vmhaFUwAAcBybz&Expires=1638697348&Signature=lNdph2eUsOWk8V1M7LvQurrBO5I%3D">-->
+<!--            &lt;!&ndash;            <source src="http://www.dazezzz.cn/video/hdw.m4a">&ndash;&gt;-->
+<!--        </audio>-->
+        <!--        <a href="" target=_blank>*ICP备********号</a>-->
+    </div>
+</div>
+<div class="bt"></div>
+
+
+<script>
+    var video = document.getElementById('v1');
+    video.playbackRate = 0.5;
+</script>
+
+
+</body>
+</html>
